@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="ng.js"></script>
+  </head>
+
+  <body ng-app="toDoList" ng-controller="things">
+
+    <h1>Things To Do Today!</h1>
+
+
+    <input id="field" type="text" ng-model="thingsToDo" placeholder="Add to List">
+    <input type="button" value="Submit" ng-click="add()">
+
+      <ul>
+        <li ng-repeat="toDo in things | filter: thingsToDo">
+          <input ng-model="completed" type="checkbox">
+          <span ng-class="{completed:completed}">{{toDo}}</span>
+        </li>
+      </ul>
+
+
+
+
+  </body>
+
+</html>
