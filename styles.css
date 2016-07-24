@@ -17,7 +17,13 @@ body {
 }
 
 h1 {
+  text-align: center;
+  /*padding-right: 170px;*/
+  color: #060924;
+}
 
+marquee {
+  margin-left: -180px;
 }
 
 ul li {
@@ -37,6 +43,19 @@ input:focus {
   margin-left: 9%;
 }
 
+
+
+@media (max-width: 1268px) {
+  h1 {
+    /*margin-left: -1%;*/
+  }
+}
+
+@media (max-width: 1255px) {
+  h1 {
+    /*margin-left: -2%;*/
+  }
+}
 
 @media (max-width: 1199px;) {
   body {
@@ -146,5 +165,11 @@ input:focus {
   body {
     margin-left: 3%;
     padding-left: 0;
+  }
+  #field {
+    margin-left: 15%;
+  }
+  h1 {
+
   }
 }
